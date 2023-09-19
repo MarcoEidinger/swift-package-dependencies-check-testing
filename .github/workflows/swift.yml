@@ -26,3 +26,14 @@ jobs:
     uses: MarcoEidinger/swift-package-dependencies-check/.github/workflows/reusableWorkflow.yml@v2
     with:
       commit-message: 'Package update'
+
+  test-swift59:
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v3
+    - name: Check Swift package dependencies
+      id: spm-dep-check
+      uses: MarcoEidinger/swift-package-dependencies-check@swift-5.9
+      with:
+         isMutating: true
+         failWhenOutdated: false
