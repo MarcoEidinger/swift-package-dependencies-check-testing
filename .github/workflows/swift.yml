@@ -24,7 +24,7 @@ jobs:
       run: swift test -v
 
   dependencies:
-    uses: MarcoEidinger/swift-package-dependencies-check/.github/workflows/reusableWorkflow.yml@2.7.0
+    uses: MarcoEidinger/swift-package-dependencies-check/.github/workflows/reusableWorkflow.yml@v2
     with:
       commit-message: 'Package update'
 
